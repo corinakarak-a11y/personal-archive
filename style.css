@@ -1,0 +1,1011 @@
+/* ========================================
+   COLOURS AND GENERAL SETTINGS
+======================================== */
+
+:root {
+    --header: #990000;
+    --navigation: #6B0000;
+    --link: #990000;
+    --text: #333333;
+    --muted: #666666;
+    --background: #FFFFFF;
+    --panel: #EEEEEE;
+    --border: #CCCCCC;
+    --input-border: #999999;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--background);
+    color: var(--text);
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+a {
+    color: var(--link);
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #660000;
+}
+
+
+/* ========================================
+   AO3-INSPIRED HEADER
+======================================== */
+
+.site-header {
+    background: #FFFFFF;
+    color: #990000;
+    border-bottom: none;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 8px 14px 7px;
+}
+
+/* ARCHIVE LOGO */
+
+.archive-logo {
+    display: block;
+    width: 46px;
+    height: 46px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+}
+
+.site-title {
+    display: inline-block;
+    color: #990000;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    font-weight: normal;
+    letter-spacing: -1px;
+    text-decoration: none;
+    line-height: 1.2;
+}
+
+.site-title:hover {
+    color: #660000;
+    text-decoration: none;
+}
+
+/* CORINA'S VERSION: FOOTNOTE STYLE */
+
+.version-note {
+    display: inline-block;
+    position: relative;
+    top: -0.65em;
+
+    margin-left: 3px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 0.42em;
+    font-style: italic;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.site-title em {
+    font-style: italic;
+    font-weight: normal;
+}
+
+.subtitle {
+    margin: 1px 0 0;
+    color: #990000;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 9px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+
+/* ========================================
+   AO3-INSPIRED NAVIGATION
+======================================== */
+
+/* NAVIGATION BAR */
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 8px 14px;
+    background: var(--navigation);
+    color: #FFFFFF;
+}
+
+/* LEFT-SIDE NAVIGATION LINKS */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-shrink: 0;
+}
+
+.nav-links a {
+    display: block;
+    padding: 5px 10px;
+    color: #FFFFFF;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    background: #660000;
+    text-decoration: underline;
+}
+
+/* SEARCH BAR ON DESKTOP */
+.nav-search {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 33.333%;
+    margin-left: auto;
+    flex-shrink: 1;
+}
+
+/* SEARCH INPUT */
+.nav-search input {
+    flex: 1;
+    min-width: 0;
+    width: 0;
+    padding: 6px 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 12px !important;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+}
+
+.nav-search input:focus {
+    border-color: #555555;
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.6);
+    outline: none;
+}
+
+/* SEARCH BUTTON */
+.nav-search button {
+    flex-shrink: 0;
+    padding: 6px 12px;
+    border: 1px solid #CCCCCC;
+    border-radius: 12px !important;
+    background: #EEEEEE;
+    color: #333333;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.nav-search button:hover {
+    background: #DDDDDD;
+}
+
+/* ========================================
+   MAIN PAGE
+======================================== */
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 12px;
+}
+
+section {
+    margin-bottom: 18px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: normal;
+}
+
+h2 {
+    margin: 0 0 8px;
+    padding-bottom: 4px;
+    color: var(--link);
+    border-bottom: 1px solid var(--border);
+    font-size: 17px;
+}
+
+
+/* ========================================
+   WELCOME MESSAGE
+======================================== */
+
+.notice {
+    padding: 12px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+}
+
+.notice strong {
+    font-size: 13px;
+}
+
+.notice p {
+    margin: 5px 0 0;
+}
+
+
+/* ========================================
+   SEARCH BOX
+======================================== */
+
+.search-panel {
+    padding: 12px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+}
+
+.search-panel label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.search-row {
+    display: flex;
+    gap: 5px;
+}
+
+.search-row input {
+    flex: 1;
+    min-width: 0;
+    padding: 5px 7px;
+    background: white;
+    border: 1px solid var(--input-border);
+    border-radius: 2px;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+}
+
+.search-row button {
+    padding: 5px 12px;
+    background: #F8F8F8;
+    color: var(--text);
+    border: 1px solid #AAAAAA;
+    border-radius: 3px;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.search-row button:hover {
+    background: #DDDDDD;
+}
+
+
+/* ========================================
+   WORK LIST
+======================================== */
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+}
+
+.section-title h2 {
+    margin: 0;
+    padding-bottom: 4px;
+    border: none;
+}
+
+#work-count {
+    color: var(--muted);
+    font-size: 11px;
+}
+
+.work {
+    margin-bottom: 10px;
+    padding: 12px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 0;
+}
+
+.work h3 {
+    margin: 0 0 7px;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.work h3 a {
+    color: var(--link);
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 8px;
+}
+
+.tags span {
+    padding: 2px 5px;
+    background: white;
+    border: 1px solid #DDDDDD;
+    border-radius: 2px;
+    font-size: 10px;
+}
+
+.fandom {
+    margin: 6px 0;
+    font-weight: bold;
+}
+
+.summary {
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+.stats {
+    margin: 8px 0 0;
+    color: var(--muted);
+    font-size: 10px;
+}
+
+
+/* ========================================
+   ABOUT
+======================================== */
+
+.about {
+    padding: 12px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.footer {
+    margin-top: 25px;
+    padding: 12px;
+    background: var(--panel);
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    text-align: center;
+    font-size: 10px;
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+    .header-inner {
+        padding: 8px 10px;
+    }
+
+    .site-title {
+        font-size: 21px;
+    }
+
+    .navigation {
+        padding: 0 4px;
+    }
+
+    .navigation a {
+        padding: 7px 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .notice,
+    .search-panel,
+    .about,
+    .work {
+        padding: 10px;
+    }
+
+    .search-row button {
+        padding: 5px 9px;
+    }
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+    .header-inner {
+        gap: 8px;
+        padding: 8px 10px;
+    }
+
+    .archive-logo {
+        width: 38px;
+        height: 38px;
+    }
+
+    .site-title {
+        font-size: 19px;
+        letter-spacing: -0.5px;
+    }
+
+    .subtitle {
+        font-size: 8px;
+        letter-spacing: 0.7px;
+    }
+
+    .navigation {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 10px;
+        padding: 4px 8px;
+    }
+
+    .nav-links {
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        gap: 12px;
+    }
+
+    .nav-links a {
+        padding: 5px 6px;
+    }
+
+    .nav-search {
+        display: flex;
+        width: 50%;
+        margin-left: auto;
+    }
+
+    .nav-search input {
+        flex: 1;
+        width: 0;
+        min-width: 0;
+        border-radius: 12px !important;
+    }
+
+    .nav-search button {
+        flex-shrink: 0;
+        border-radius: 12px !important;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .notice,
+    .search-panel,
+    .about,
+    .work {
+        padding: 10px;
+    }
+
+    .search-row button {
+        padding: 5px 9px;
+    }
+}
+/* ========================================
+   AO3-INSPIRED WORK SYMBOLS
+======================================== */
+
+.work-symbols {
+    display: grid;
+    grid-template-columns: repeat(2, 29px);
+    grid-template-rows: repeat(2, 29px);
+    gap: 4px;
+
+    grid-column: 1;
+    grid-row: 1;
+
+    width: max-content;
+    margin: 0;
+    padding: 0;
+}
+
+/* BASE SYMBOL */
+.archive-symbol {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 29px;
+    height: 29px;
+    box-sizing: border-box;
+    border: 1px solid #CCCCCC;
+    background: #FFFFFF;
+    font-family: Arial, sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+/* RATINGS */
+.rating-general {
+    background: #8DBD3F;
+    border-color: #719C30;
+    color: #FFFFFF;
+}
+
+.rating-teen {
+    background: #E8C42D;
+    border-color: #C7A61D;
+    color: #FFFFFF;
+}
+
+.rating-mature {
+    background: #D98532;
+    border-color: #B96B20;
+    color: #FFFFFF;
+}
+
+.rating-explicit {
+    background: #990000;
+    border-color: #770000;
+    color: #FFFFFF;
+}
+
+.rating-unrated {
+    background: #EEEEEE;
+    color: #555555;
+}
+
+/* RELATIONSHIPS */
+.relationship-ff {
+    background: #99004D;
+    border-color: #77003C;
+    color: #FFFFFF;
+}
+
+.relationship-fm {
+    background: #7D1685;
+    border-color: #601066;
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+.relationship-gen {
+    background: #8DBD3F;
+    border-color: #719C30;
+    color: #FFFFFF;
+}
+
+.relationship-mm {
+    background: #1766B1;
+    border-color: #104C87;
+    color: #FFFFFF;
+}
+
+.relationship-multi {
+    background: linear-gradient(
+        135deg,
+        #8DBD3F 0 25%,
+        #8A168B 25% 50%,
+        #990000 50% 75%,
+        #1766B1 75%
+    );
+    color: #FFFFFF;
+    border-color: #777777;
+}
+
+.relationship-other {
+    background: #222222;
+    border-color: #111111;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+/* ARCHIVE WARNINGS */
+.warning-chose {
+    background: #D98532;
+    border-color: #B96B20;
+    color: #FFFFFF;
+    font-size: 17px;
+}
+
+.warning-apply {
+    background: #990000;
+    border-color: #770000;
+    color: #FFFFFF;
+}
+
+.warning-none {
+    background: #FFFFFF;
+    border-color: #CCCCCC;
+    color: #555555;
+    font-size: 19px;
+}
+
+/* COMPLETION STATUS */
+.status-progress {
+    background: #990000;
+    border-color: #770000;
+    color: #FFFFFF;
+    font-size: 23px;
+}
+
+.status-complete {
+    background: #8DBD3F;
+    border-color: #719C30;
+    color: #FFFFFF;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .work-symbols {
+        gap: 4px;
+        margin-bottom: 8px;
+    }
+
+    .archive-symbol {
+        width: 27px;
+        height: 27px;
+        font-size: 19px;
+    }
+
+    .relationship-fm,
+    .warning-chose {
+        font-size: 15px;
+    }
+}
+
+/* ========================================
+   INDIVIDUAL WORK PAGE
+======================================== */
+
+.work-page .container {
+    max-width: 1200px;
+}
+
+/* BREADCRUMBS */
+
+.breadcrumbs {
+    margin: 8px 0 18px;
+    font-size: 11px;
+}
+
+.breadcrumbs span {
+    margin: 0 4px;
+    color: var(--muted);
+}
+
+/* WORK HEADING */
+
+.fic-header {
+    position: relative;
+    padding: 0;
+}
+
+.fic-heading {
+    margin-bottom: 18px;
+    padding-left: 0;
+}
+
+.fic-heading h1 {
+    margin: 0;
+    color: var(--link);
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+.fic-author {
+    margin: 4px 0 14px;
+    font-size: 12px;
+}
+
+/* FOUR ARCHIVE SYMBOLS */
+
+.fic-symbols {
+    display: grid;
+    grid-template-columns: repeat(2, 29px);
+    grid-template-rows: repeat(2, 29px);
+    gap: 4px;
+    float: right;
+    margin: 0 0 12px 18px;
+}
+
+/* METADATA PANEL */
+
+.fic-metadata {
+    padding: 14px 18px;
+    background: #EEEEEE;
+    border: 1px solid #CCCCCC;
+    border-radius: 0;
+}
+
+.fic-metadata h2 {
+    margin: 0 0 3px;
+    padding: 0;
+    color: #333333;
+    border: none;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.fic-metadata ul {
+    margin: 0 0 12px;
+    padding-left: 25px;
+}
+
+.fic-metadata ul:last-child {
+    margin-bottom: 0;
+}
+
+.fic-metadata li {
+    padding: 1px 0;
+}
+
+.fic-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 0 !important;
+    list-style: none;
+}
+
+.fic-tags li {
+    margin: 0;
+    padding: 3px 6px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 0;
+    font-size: 11px;
+}
+
+.fic-tags a {
+    text-decoration: none;
+}
+
+.fic-tags a:hover {
+    text-decoration: underline;
+}
+
+/* SUMMARY AND NOTES */
+
+.fic-summary,
+.fic-notes {
+    margin-top: 14px;
+    padding: 12px 16px;
+    background: #EEEEEE;
+    border: 1px solid #CCCCCC;
+}
+
+.fic-summary h2,
+.fic-notes h2 {
+    margin: 0 0 8px;
+    padding: 0;
+    color: #333333;
+    border: none;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.fic-summary blockquote {
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+}
+
+.fic-notes p {
+    margin: 0;
+}
+
+/* ACTION BUTTONS */
+
+.work-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 14px 0;
+    padding: 10px;
+    background: #EEEEEE;
+    border: 1px solid #CCCCCC;
+}
+
+.work-actions a,
+.interaction-panel button,
+.chapter-navigation button {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #F8F8F8;
+    color: #990000;
+    border: 1px solid #AAAAAA;
+    border-radius: 3px;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 11px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.work-actions a:hover,
+.interaction-panel button:hover,
+.chapter-navigation button:hover {
+    background: #DDDDDD;
+}
+
+/* WORK STATISTICS */
+
+.fic-stats {
+    margin: 12px 0;
+    padding: 10px 12px;
+    background: #EEEEEE;
+    border: 1px solid #CCCCCC;
+}
+
+.fic-stats dl {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 22px;
+    margin: 0;
+}
+
+.fic-stats dl div {
+    display: flex;
+    gap: 4px;
+}
+
+.fic-stats dt {
+    font-weight: bold;
+}
+
+.fic-stats dd {
+    margin: 0;
+}
+
+/* CHAPTER NAVIGATION */
+
+.chapter-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin: 18px 0;
+    padding: 10px;
+    background: #EEEEEE;
+    border: 1px solid #CCCCCC;
+}
+
+.chapter-navigation select {
+    max-width: 100%;
+    padding: 5px;
+    border: 1px solid #999999;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+}
+
+/* CHAPTER READING AREA */
+
+.chapter {
+    margin-top: 18px;
+    padding: 18px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+}
+
+.chapter h2 {
+    margin: 0 0 18px;
+    padding-bottom: 8px;
+    color: #333333;
+    border-bottom: 1px solid #CCCCCC;
+    font-size: 18px;
+}
+
+.chapter-body {
+    max-width: 850px;
+    margin: 0 auto;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+    line-height: 1.9;
+    overflow-wrap: anywhere;
+}
+
+.chapter-placeholder {
+    color: #777777;
+    font-style: italic;
+}
+
+.bottom-actions {
+    margin-top: 16px;
+}
+
+/* INTERACTION PANELS */
+
+.interaction-panel,
+.comments-section {
+    margin: 18px 0;
+    padding: 14px;
+    background: #EEEEEE;
+    border: 1px solid #CCCCCC;
+}
+
+.interaction-panel h2,
+.comments-section h2 {
+    margin: 0 0 8px;
+    padding: 0 0 5px;
+    font-size: 16px;
+}
+
+.interaction-panel p,
+.comments-section p {
+    margin: 8px 0;
+}
+
+.interaction-panel button:disabled {
+    opacity: 0.7;
+    cursor: default;
+}
+
+.comment-placeholder {
+    padding: 12px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .work-page .container {
+        padding: 10px;
+    }
+
+    .fic-heading h1 {
+        font-size: 21px;
+    }
+
+    .fic-metadata {
+        padding: 10px;
+    }
+
+    .fic-summary,
+    .fic-notes {
+        padding: 10px;
+    }
+
+    .fic-stats dl {
+        gap: 8px 14px;
+    }
+
+    .chapter {
+        padding: 12px;
+    }
+
+    .chapter-body {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+}
