@@ -1009,3 +1009,24 @@ h2 {
         line-height: 1.8;
     }
 }
+
+/* CHAPTER TEXT FORMATTING */
+.chapter-body p {
+    margin: 0 0 1em;
+    text-indent: 0;
+}
+
+.chapter-body p:last-child {
+    margin-bottom: 0;
+}
+
+.chapter-location {
+    display: block;
+    width: 100%;
+    text-align: right !important;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.8;
+    margin: 0 0 28px auto;
+}
